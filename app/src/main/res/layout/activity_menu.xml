@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="50dp"
+    android:background="@color/black"
+    tools:context=".MenuActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:padding="20dp"
+        android:layout_marginBottom="20dp"
+        android:rotationX="30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WORDLE"
+        android:textStyle="bold"
+        android:textSize="45dp"
+        android:textColor="@color/darkyellow"
+        android:gravity="center"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout"
+
+        />
+
+    <TextView
+        android:id="@+id/titlehigh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="highscores:"
+        android:textSize="25dp"
+        android:textColor="@color/lightgray"
+        android:gravity="center_horizontal"
+        android:fontFamily="monospace"
+
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/recycler_view"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout"
+
+        />
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+
+        app:layout_constraintBottom_toTopOf="@id/titlehigh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        >
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <EditText
+                android:id="@+id/enter"
+                android:hint="enter username"
+                android:fontFamily="monospace"
+                android:textColorHint="@color/gray"
+                android:textSize="30dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@id/startbtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <Button
+                android:id="@+id/startbtn"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:text="@string/startgame"
+                android:textAlignment="center"
+                android:backgroundTint="@color/mutedyellow"
+                android:fontFamily="monospace"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:background="@color/darkblack"
+        tools:listitem="@layout/text_row_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titlehigh" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

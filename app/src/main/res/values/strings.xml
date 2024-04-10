@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GameThree</string>
+    <string name="prompt">Type Guess</string>
+    <string name="welcome">Hello</string>
+    <string name="startgame">Start Game</string>
+    <string name="gamewon">You Won!</string>
+    <string name="gamelost">You Lost!</string>
+</resources>
