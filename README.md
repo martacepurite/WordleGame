@@ -17,3 +17,11 @@ git clone https://github.com/martacepurite/WordleGame.git
 
 # Open the project in Android Studio
 # Build and run the app on your emulator or physical device
+```
+## Screenshots
+
+### 🧩 Gameplay Screen
+![Gameplay](./Screenshot_1.jpg)
+
+### 🏁 Start Screen with High Scores
+![Start Screen](./Screenshot_2.jpg)
