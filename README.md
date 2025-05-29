@@ -20,8 +20,8 @@ git clone https://github.com/martacepurite/WordleGame.git
 ```
 ## Screenshots
 
-### 🧩 Gameplay Screen
-<img src="Screenshot_1.jpg" alt="Gameplay" width="300"/>
+### Gameplay Screen
+<img src="Screenshot_1.jpg" alt="Gameplay" width="200"/>
 
 ### 🏁 Start Screen with High Scores
-![Start Screen](./Screenshot_2.jpg)
+<img src="Screenshot_2.jpg" alt="Highscores" width="200"/>
