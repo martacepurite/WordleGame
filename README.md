@@ -21,7 +21,7 @@ git clone https://github.com/martacepurite/WordleGame.git
 ## Screenshots
 
 ### 🧩 Gameplay Screen
-![Gameplay](./Screenshot_1.jpg)
+<img src="Screenshot_1.jpg" alt="Gameplay" width="300"/>
 
 ### 🏁 Start Screen with High Scores
 ![Start Screen](./Screenshot_2.jpg)
